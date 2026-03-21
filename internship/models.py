@@ -9,7 +9,6 @@ class Student(models.Model):
     year_of_study = models.IntegerField()
     internship_place = models.CharField(max_length=255)
     supervisor_name = models.CharField(max_length=100)
-    phone_number = models.CharField(max_length=20)
     date_joined = models.DateField(auto_now_add=True)
 
     def __str__(self):
